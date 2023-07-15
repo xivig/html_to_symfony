@@ -10,17 +10,17 @@ class HomeController extends AbstractController{
     #[Route('/', name:'app_homepage')]
     public function homepage(): Response {
         // return new Response('Title: Cool');
-        return $this->render('xivig/homepage.html.twig',[
-            'title'=>'Xivig website',
-        ]);
-    }
-    #[Route('/front', name:'app_front')]
-    public function frontpage(): Response {
-        // return new Response('Title: Cool');
         return $this->render('xivig/front.html.twig',[
             'title'=>'Xivig website',
         ]);
     }
+//    #[Route('/front', name:'app_front')]
+//    public function frontpage(): Response {
+//        // return new Response('Title: Cool');
+//        return $this->render('xivig/front.html.twig',[
+//            'title'=>'Xivig website',
+//        ]);
+//    }
 
    /*  #[Route('/front/{slug}', name:'app_front')]
     public function frontpage(string $slug=null){
